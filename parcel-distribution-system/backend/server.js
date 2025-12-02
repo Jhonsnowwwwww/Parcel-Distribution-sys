@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+import setupDatabase from './src/config/setupDatabase.js';
 
 const parcelRoutes = require('./src/routes/parcels');
 const departmentRoutes = require('./src/routes/departments');
@@ -33,3 +34,5 @@ app.listen(PORT, () => {
   console.log(`📦 Parcels API: http://localhost:${PORT}/api/parcels`);
   console.log(`🏢 Departments API: http://localhost:${PORT}/api/departments`);
 });
+
+setupDatabase();

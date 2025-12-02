@@ -94,4 +94,5 @@ async function setupDatabase() {
   }
 }
 
-setupDatabase();
+// setupDatabase();
+export default setupDatabase;
