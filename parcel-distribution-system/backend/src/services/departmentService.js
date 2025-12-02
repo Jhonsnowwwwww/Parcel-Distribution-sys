@@ -9,9 +9,9 @@ class DepartmentService {
     return result.rows;
   }
 
-  async create(department) {
+  async create(department) {3
     const { name, condition_type, operator, value, priority = 0, color_theme = 'blue' } = department;
-    
+                   
     const result = await db.query(
       'INSERT INTO departments (name, condition_type, operator, value, priority, color_theme) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
       [name, condition_type, operator, value, priority, color_theme]

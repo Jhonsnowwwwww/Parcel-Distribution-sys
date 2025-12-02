@@ -27,7 +27,7 @@ router.post('/process-xml', async (req, res) => {
 // Get history
 router.get('/history', async (req, res) => {
   try {
-    const history = await parcelService.getHistory();
+    const history = await parcelService.getHistory(); 
     res.json({ success: true, data: history });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
