@@ -2,7 +2,8 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-import setupDatabase from './src/config/setupDatabase.js';
+//require('./src/config/setupDatabase');
+const setupDatabase = require('./src/config/setupDatabase');
 
 const parcelRoutes = require('./src/routes/parcels');
 const departmentRoutes = require('./src/routes/departments');

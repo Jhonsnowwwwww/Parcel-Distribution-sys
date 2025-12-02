@@ -95,4 +95,4 @@ async function setupDatabase() {
 }
 
 // setupDatabase();
-export default setupDatabase;
+module.exports = setupDatabase;
